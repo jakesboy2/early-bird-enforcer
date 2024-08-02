@@ -29,7 +29,7 @@ impl EventHandler for Bot {
             // Check time is between 0000 and 0800 for the user (CDT timezone)
             let timestamp = msg.timestamp.time();
             let hour = timestamp.hour();
-            if hour <= START_UTC && hour >= END_UTC {
+            if hour < START_UTC || hour >= END_UTC {
                 let _ = msg.delete(ctx.http).await;
             }
         }
