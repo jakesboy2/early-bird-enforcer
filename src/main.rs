@@ -10,7 +10,7 @@ struct Bot;
 
 const CHANNEL_ID_405: u64 = 1268785857129746493;
 const CHANNEL_ID_OKLAHOMIES: u64 = 1267497037331562507;
-const START_UTC: u8 = 5;
+const START_UTC: u8 = 9;
 const END_UTC: u8 = 13;
 
 fn channel_matches(channel_id: &u64) -> bool {
